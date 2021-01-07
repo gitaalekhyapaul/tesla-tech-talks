@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
+    <title>IoT Tesla Tech Talks</title>
   </head>
   <body>
-    Hello World!
+    <main id="auth">
+      <section class="password">
+        <h1>Enter Password</h1>
+        <input id="loginInput" type="password" name="password" />
+        <button id="loginButton">LOGIN</button>
+      </section>
+    </main>
+    <main id="main">
+      <section class="main">
+        <h1>Controls</h1>
+        <article class="lights">
+          <span id="red" class="circle"></span>
+          <span id="yellow" class="circle"></span>
+          <span id="green" class="circle"></span>
+        </article>
+        <article>
+          <button id="startTraffic">START TRAFFIC</button>
+          <button id="stopTraffic">STOP TRAFFIC</button>
+        </article>
+        <h2>AQI: <span id="aqi">--</span></h2>
+      </section>
+    </main>
     <script src="/js/script.js"></script>
   </body>
 </html>

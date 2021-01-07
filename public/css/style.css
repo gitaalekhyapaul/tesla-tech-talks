@@ -1,3 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech", sans-serif;
+}
+
 body {
   background-color: whitesmoke;
+  min-height: 100vh;
+  display: grid;
+  place-items: center stretch;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 28pt;
+  font-weight: 400;
+}
+
+button {
+  font-size: 12pt;
+  padding: 0.5rem 1rem;
+  background-color: #138e9f;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 4px 0 #0f7280;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  filter: brightness(1);
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+#auth,
+#main {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.14), 0px 1px 9px 0px rgba(0, 0, 0, 0.12);
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.password input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 14pt;
+  outline: none;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: calc(2rem);
+}
+
+.main article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lights {
+  padding: 0 2rem;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  filter: brightness(0.3);
+}
+#red {
+  background-color: red;
+  margin-bottom: 1rem;
+}
+#yellow {
+  background-color: gold;
+  margin-bottom: 1rem;
+}
+#green {
+  background-color: greenyellow;
+  margin-bottom: 1rem;
+}
+
+.on {
+  filter: brightness(1);
+}
+
+@media screen and (max-width: 350px) {
+  .main article {
+    flex-direction: column;
+  }
+
+  .main article button {
+    margin-bottom: 1rem;
+  }
 }
