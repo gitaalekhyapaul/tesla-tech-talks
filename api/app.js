@@ -52,9 +52,10 @@ const resetLights = async () => {
 
 /* API routes */
 app.post("/api/v1/login", (req, res, next) => {
-  const email = req.body["email"];
-  if (email) {
-    const authToken = Buffer.from(`gitaalekhyapaul::${email}`).toString(
+  const password = req.body["password"];
+  console.log(password);
+  if (password) {
+    const authToken = Buffer.from(`gitaalekhyapaul::${password}`).toString(
       "base64"
     );
     res.status(200).json({
@@ -64,7 +65,7 @@ app.post("/api/v1/login", (req, res, next) => {
   } else {
     res.status(400).json({
       success: false,
-      message: "email cannot be null.",
+      message: "password cannot be null.",
     });
   }
 });
