@@ -165,4 +165,7 @@ Promise.all([resetLights()])
       );
     });
   })
-  .catch((_) => process.exit(1));
+  .catch((_) => {
+    console.error("Error in starting server!");
+    process.exit(1);
+  });

@@ -1,4 +1,4 @@
-/*Impoting Libraries*/
+/*Importing Libraries*/
 #include <ESP8266WiFi.h>
 #include <DNSServer.h>
 #include <ESP8266WebServer.h>
