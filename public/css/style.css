@@ -106,8 +106,19 @@ button:active {
   margin-bottom: 1rem;
 }
 
-.on {
+#red.on {
   filter: brightness(1);
+  box-shadow: 0 0 20px red;
+}
+
+#yellow.on {
+  filter: brightness(1);
+  box-shadow: 0 0 20px goldenrod;
+}
+
+#green.on {
+  filter: brightness(1);
+  box-shadow: 0 0 20px green;
 }
 
 @media screen and (max-width: 350px) {
