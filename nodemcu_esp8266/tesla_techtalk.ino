@@ -151,7 +151,7 @@ void handleGetSensorValue()
   for 0 - 3.3 volts. On top of that we use map() to convert the above value to a
   scale of 0 -100
   */
-  int sensorValue = map(analogRead(A0), 0, 1024, 0, 100);
+  int sensorValue = map(analogRead(A0), 0, 1023, 0, 100);
   Serial.println("LOG:: GET /api/v1/getSensorValue");
   Serial.print("Sensor Value: ");
   Serial.println(sensorValue);
